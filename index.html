@@ -17,11 +17,76 @@
     <link rel="stylesheet" href="styles/global.css" />
   </head>
   <body>
-    <!-- Header Area -->
-    <header></header>
-    <!-- Main Area -->
-    <main>
-      <h1>My Amazing Portfolio</h1>
-    </main>
+    <header>
+      <img
+            height="70"
+            src="./assets/images/crown.jpg"
+            alt="Maureen profile picture">
+        <h1>Hi, I'm Maureen!</h1>
+        <p>Educational Admnistrator | Customer Support | Front-End Developer | Content-Creator</p>
+      </header>
+    
+      <nav>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+      </nav>
+    
+      <section id="about">
+        <h2>About Me</h2>
+        <p>I have a strong passion for supporting students, educators, and academic programs. I'm a passionate Customer Support Specialist focused on providing excellent service and solving problems with care and efficiency. I am a content creator that inspire, inform, and connect with audiences by producing high-quality, meaningful content that leaves a lasting impression. I also love coding and learning new technologies!</p>
+      </section>
+    <hr>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+          <h3>As an Educationist</h3>
+          <p>To foster a positive and organized educational atmosphere where both students and staff can thrive.
+            I am committed to promoting academic excellence, improving administrative processes, and building strong relationships within the school community.</p>
+        </div>
+        <div class="project">
+          <h3>As a Customer Support Specialist </h3>
+          <p>Solve problems, build trust and ensure customers feel heard, valued, and satisfied.
+            Great customer support is key to building strong, lasting relationships between businesses and customers.</p>
+        </div>
+      </section>
+    <hr>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a
+          href="https://www.aisabormaureen@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          >aisabormaureen@gmail.com</a></p>
+        <p> Tel: +234 8168390275</p>
+        <p>LinkedIn: <a
+            href="https://www.linkedin.com/in/aisabor-maureen"
+            target="_blank"
+            rel="noopener noreferrer"
+            >https://www.linkedin.com/in/aisabor-maureen</a
+          ></p>
+      </section>
+      <section class="contact-form"">
+        <h2>Contact Me</h2>
+        <form>
+          <label for="firstname">First Name:</label>
+          <input type="text" id="firstname" name="firstname" required />
+    
+          <label for="lastname">Second Name:</label>
+          <input type="text" id="lastname" name="lastname" required />
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+    
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Write your message here...""></textarea>
+    
+          <button type="submit">Send Message</button>
+        </form>
+      </section>    
+      <footer>
+        <p>© 2025 Maureen. All rights reserved.</p>
+      </footer>
+      <script src="script.js"></script>
   </body>
 </html>
