@@ -1,16 +1,22 @@
-const form = document.getElementById('contactForm');
 
-function changeText() {
-  document.getElementById("submit").textContent = "You clicked the button!";
-}
+const form = document.getElementById('contact-form');
+const responseBox = document.getElementById('response');
 
-    const firstName = document.getElementById('firstname').value;
-    const lastName = document.getElementById('lastname').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
 
-    alert(
-        `Thank you, ${firstName} ${lastName}!\nWe have received your message:\n"${message}"\nWe'll get back to you at ${email}.`
-    );
+  const firstname = document.getElementById('firstname').value;
+  const lastname = document.getElementById('lastname').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
 
+  responseBox.innerHTML = `
+    <h3>Message Received:</h3>
+    <p><strong>Name:</strong> ${firstname} ${lastname}</p>
+    <p><strong>Email:</strong> ${email}</p>
+    <p><strong>Message:</strong> ${message}</p>
+  `;
+  responseBox.classList.remove('hidden');
   
+  form.reset();
+});

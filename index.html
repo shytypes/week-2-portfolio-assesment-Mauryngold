@@ -66,24 +66,17 @@
             >https://www.linkedin.com/in/aisabor-maureen</a
           ></p>
       </section>
-      <section class="contact-form"">
-        <h2>Contact Me</h2>
-        <form>
-          <label for="firstname">First Name:</label>
-          <input type="text" id="firstname" name="firstname" required />
+        <h2>Contact Us</h2>
+
+      <form id="contact-form">
+        <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
+        <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     
-          <label for="lastname">Second Name:</label>
-          <input type="text" id="lastname" name="lastname" required />
-    
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-    
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required placeholder="Write your message here...""></textarea>
-    
-          <button onclick="changeText()" type="submit">Send Message</button>
-        </form>
-      </section>    
+      <div id="response" class="hidden"></div>
       <footer>
         <p>© 2025 Maureen. All rights reserved.</p>
       </footer>
