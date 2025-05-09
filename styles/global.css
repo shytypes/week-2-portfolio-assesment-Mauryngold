@@ -8,3 +8,93 @@
 /* the font-family 'JetBrains Mono', has been linked
  * and is available for your use
  * */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: lightgray;
+}
+header {
+  background-color: black;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+ h2{
+  text-align: center;
+ }
+form {
+  margin-bottom: 20px;
+  padding: 20px 10px;
+  max-width: 200px;
+  margin: auto;
+}
+
+input, textarea, button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#response {
+  max-width: 400px;
+  padding: 15px;
+  background-color: #e6f7ff;
+  border-left: 5px solid #007acc;
+}
+
+.hidden {
+  display: none;
+}
+
+img{
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+nav {
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  color: yellow;
+}
+section {
+  padding: 40px;
+  text-align: center;
+}
+.project {
+  background-color: white;
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
